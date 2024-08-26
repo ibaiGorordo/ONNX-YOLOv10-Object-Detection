@@ -1,7 +1,7 @@
 # ONNX YOLOv10 Object Detection
  Python scripts performing object detection using the YOLOv10 model in ONNX.
  
-![!ONNX YOLOv10 Object Detection]([https://github.com/user-attachments/assets/a4237b6e-53f1-4c51-be3a-bd8369c1991c](https://github.com/user-attachments/assets/a926d7d7-7ee5-474d-b90f-310ef874f0cb))
+![!ONNX YOLOv10 Object Detection](https://github.com/user-attachments/assets/a926d7d7-7ee5-474d-b90f-310ef874f0cb)
 
 > [!CAUTION]
 > I skipped adding the pad to the input image when resizing, which might affect the accuracy of the model if the input image has a different aspect ratio compared to the input size of the model. Always try to get an input size with a ratio close to the input images you will use.
