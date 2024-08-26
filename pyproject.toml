@@ -3,9 +3,9 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "yolov9-onnx"
-version = "0.4.0"
-description = "Run YOLOv9 MIT model with ONNX Runtime"
+name = "yolov10-onnx"
+version = "0.1.0"
+description = "Run YOLOv10 model with ONNX Runtime"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["yolov9"]
+include = ["yolov10"]
 
 [project.urls]
-Homepage = "https://github.com/ibaiGorordo/ONNX-YOLOv9-MIT-ObjectDetection"
+Homepage = "https://github.com/ibaiGorordo/ONNX-YOLOv10-Object-Detection"
