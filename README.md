@@ -49,10 +49,11 @@ The original YOLOv10 model can be found in this repository: https://github.com/T
  python webcam_object_detection.py
  ```
 
- * **Video inference**: https://youtu.be/X_XVkEqgCUM
+ * **Video inference**: https://youtu.be/hz9PYZF4ax4
  ```
  python video_object_detection.py
  ```
+![!yolov10_object_detection](https://github.com/user-attachments/assets/08872b1c-2009-4f8d-97a5-7b88f13ec887)
 
 
 ## References:
