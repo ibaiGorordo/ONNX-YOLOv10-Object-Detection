@@ -30,7 +30,7 @@ Otherwise:
 `pip install onnxruntime`
 
 ## ONNX model
-- If the model file is not found in the models directory, it will be downloaded automatically from the [HuggingFace](https://huggingface.co/onnx-community?search_models=yolov10).
+- If the model file is not found in the models directory, it will be downloaded automatically from the [Official Repo](https://github.com/THU-MIG/yolov10/releases/tag/v1.1).
 - **Available models**: yolov10n.onnx, yolov10s.onnx, yolov10m.onnx, yolov10b.onnx, yolov10l.onnx, yolov10x.onnx
 
 ## Original YOLOv10 model

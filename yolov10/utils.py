@@ -40,7 +40,7 @@ def check_model(model_path: str):
     model_name = os.path.basename(model_path).split('.')[0]
     if model_name not in available_models:
         raise ValueError(f"Invalid model name: {model_name}")
-    url = f"https://huggingface.co/onnx-community/{model_name}/resolve/main/onnx/model.onnx"
+    url = f"https://github.com/THU-MIG/yolov10/releases/download/v1.1/{model_name}.onnx"
     download_model(url, model_path)
 
 
