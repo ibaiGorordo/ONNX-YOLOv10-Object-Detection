@@ -8,11 +8,6 @@ from yolov10 import YOLOv10, draw_detections
 videoUrl = 'https://youtu.be/tXMPRK2LQAE?si=xvKdHXe6s_m51brN'
 start_time = timedelta(minutes=1, seconds=30)
 cap = cap_from_youtube(videoUrl, start=start_time)
-fps = cap.get(cv2.CAP_PROP_FPS)
-width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-
-out = cv2.VideoWriter('output.avi', cv2.VideoWriter_fourcc(*'DIVX'), fps, (width, height))
 
 # Initialize object detector
 model_path = "models/yolov10l.onnx"
@@ -31,8 +26,6 @@ while cap.isOpened():
 
     combined_img = draw_detections(frame, boxes, confidences, class_ids)
     cv2.imshow("Detected Objects", combined_img)
-
-    out.write(combined_img)
 
     # Press key q to stop
     if cv2.waitKey(1) & 0xFF == ord('q'):
